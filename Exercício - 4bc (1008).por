@@ -7,8 +7,8 @@ programa {
     
 
   // Declaração de variáveis
-  inteiro numeroRegistro 
-  real horasTrabalhadas , valorPorHora
+  inteiro numeroRegistro , horasTrabalhadas
+  real valorPorHora
   real salarioFuncionario  
 
   // Entrada de Dados 
