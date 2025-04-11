@@ -1,3 +1,5 @@
+alert("Bem-vindo a Mini Calculadora!")
+
 let n1 = Number(prompt("Digite o 1° Número: "))
 let n2 = Number(prompt("Digite o 2° Número: "))
 
