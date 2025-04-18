@@ -1,10 +1,11 @@
 function calcularTempo(){
 
-    let distanciaCorrida
+    let distanciaCorrida, calculoTempo
     let velocidadeLuz = 300000 //km/s
-    let calcularTempo = distanciaCorrida / velocidadeLuz 
+    
+    calculoTempo = distanciaCorrida / velocidadeLuz 
 
-    Number(prompt("Qual a distância da corrida em km?:"))
+    distanciaCorrida = Number(prompt("Qual a distância da corrida?(km):"))
 
-    alert("O tempo da corrida é: " + calcularTempo + " segundos")
+    alert("O tempo da corrida é: " + calculoTempo + " segundos")
 }
