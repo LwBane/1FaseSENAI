@@ -1,5 +1,5 @@
 
-function quantidade(){
+function quantidadeEcoMoedas(){
 
     let brinquedos 
 
