@@ -1,17 +1,18 @@
 
 function quantidadeEcoMoedas(){
 
-    let brinquedos 
+    let brinquedos, moedas
 
-    brinquedos = Number(prompt("Quantos brinquedos você levou?:"))
+    brinquedos = Number(prompt("Quantos brinquedos você trouxe?:"))
 
-if(brinquedos ==1){
-    alert("Você receberá 1 moeda!")
-}else if(brinquedos ==2){
-    alert("Você receberá 2 moedas!")
-}else if(brinquedos >=3){
-    alert("Você receberá 3 moedas!")
+if(brinquedos >=0 && brinquedos <=3){
+    moedas = brinquedos	
+    alert("Você receberá " + moedas + " moedas!")
+}else if(brinquedos >3){
+    moedas = 3
+    alert("Você receberá " + moedas + " moedas!")
 }else{
+    moedas = 0
     alert("Você não receberá moedas!")
 }
 }
