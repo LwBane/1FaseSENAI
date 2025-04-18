@@ -10,9 +10,9 @@ if(brinquedos >=0 && brinquedos <=3){
 
 }else if(brinquedos > 3){
     moedas = 3
-
+    
 }else{
     moedas = 0
 }
-alert("Você receberá " + moedas + " moedas!")
+alert("Moedas recebidas: " + moedas)
 }
