@@ -54,6 +54,16 @@ function ex6(){
         alert("Você está obeso.")
     }}
 
-    function ex7(){
-        let num1 = Number(prompt("Digite um número:"))}
-    
+function ex7(){
+    let num1 = Number(prompt("Digite um número:"))
+    alert(`Opa, esse exercício ainda está em construção, pedimos desculpas!`)
+    }
+
+function ex8(){
+    let ano = Number(prompt("Digite um ano:"))
+    if((ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0)){
+        alert(`${ano} é um ano bissexto.`)
+    }
+    else{
+        alert(`${ano} não é um ano bissexto.`)
+    }}
