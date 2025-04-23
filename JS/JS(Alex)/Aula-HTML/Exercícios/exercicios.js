@@ -70,5 +70,4 @@ function ex6(){
 
     function ex7(){
         let num1 = Number(prompt("Digite um número:"))}
-
     
