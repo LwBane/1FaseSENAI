@@ -11,19 +11,19 @@ function calcularTempo(){
         let tempoAnos = tempoSegundos / 31536000
         alert(`Em ${tempoAnos} anos\nEm ${tempoSegundos} segundos`);
     }
-    else if (tempoSegundos >= 2592000) {
+    else if (tempoSegundos >= 2592000 && tempoSegundos < 31536000) {
         let tempoMeses = tempoSegundos / 2592000
         alert(`Em ${tempoMeses} meses\nEm ${tempoSegundos} segundos`);
     }
-    else if (tempoSegundos >= 86400) {
+    else if (tempoSegundos >= 86400 && tempoSegundos < 2592000) {
         let tempoDias = tempoSegundos / 86400
         alert(`Em ${tempoDias} dias\nEm ${tempoSegundos} segundos`);
     }
-    else if (tempoSegundos >= 3600) {
+    else if (tempoSegundos >= 3600 && tempoSegundos < 86400) {
         let tempoHoras = tempoSegundos / 3600
         alert(`Em ${tempoHoras} horas\nEm ${tempoSegundos} segundos`);
     }
-    else if (tempoSegundos >= 60) {
+    else if (tempoSegundos >= 60 && tempoSegundos < 3600) {
         let tempoMinutos = tempoSegundos / 60
         alert(`Em ${tempoMinutos} minutos\nEm ${tempoSegundos} segundos`);
     }
