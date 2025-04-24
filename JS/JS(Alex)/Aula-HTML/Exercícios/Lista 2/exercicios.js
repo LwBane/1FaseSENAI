@@ -43,8 +43,7 @@ function ex2(){
 }
 
 //math .floor = arredonda p baixo 
-// 
-
+//math.round = arredonda p mais próximo
 
 function ex3(){
     let signo = prompt("Digite seu signo:")
