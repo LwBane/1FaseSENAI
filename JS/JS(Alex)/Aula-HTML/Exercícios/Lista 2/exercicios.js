@@ -48,6 +48,29 @@ function ex2(){
 
 function ex3(){
     let signo = prompt("Digite seu signo:")
+
+    let min = 1 
+    let max = 5
+
+    let numero = Math.floor(Math.random() * (max - min) + min) 
+
+    let frase1 = "hoje é um ótimo dia para você!"
+    let frase2 = "cuidado, hoje você deve evitar reuniões, sogras e ex-namorados!"
+    let frase3 = "hoje é um bom dia para desacelerar e reavaliar prioridades."
+    let frase4 = "o coração pulsa mais forte, mas não se deixe levar por ilusões."
+
+    if(numero === 1){
+        alert(signo + ", " + frase1)
+    }
+    else if(numero === 2){
+        alert(signo + ", " + frase2)
+    }
+    else if(numero === 3){
+        alert(signo + ", " + frase3)
+    }
+    else if(numero === 4){
+        alert(signo + ", " + frase4)
+}
 }
 
 function ex4(){
