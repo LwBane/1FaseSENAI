@@ -13,3 +13,6 @@ while(tentativas <= 3){ // while(tentivas <=3 && acertou == false)
         tentativas++
     }
 }
+
+//if(acertou == false) alert(conta bloqueada)
+//else alert("Usuário logado com sucesso!")
