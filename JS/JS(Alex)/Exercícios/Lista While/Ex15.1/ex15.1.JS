@@ -16,5 +16,4 @@ while(j < valores.length - 2){
 novo += valores.charAt(j) 
 j++
 }
-alert("Os divisores de " + numero + " são: " + novo
-)
+alert("Os divisores de " + numero + " são: " + novo)
