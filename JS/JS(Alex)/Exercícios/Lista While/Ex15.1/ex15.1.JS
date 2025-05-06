@@ -6,7 +6,7 @@ let valores = ""
 while(numero >=1 && i <= numero){
     if(numero % i == 0){
         console.log(i)
-        valores += i + ", "
+        valores += i + ", " //pra guardar os valores
     }
     i++
 }
