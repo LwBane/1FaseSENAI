@@ -13,3 +13,14 @@ function meiaEntrada(){
     }
     alert("Você tem direito a meia entrada!")
 }
+
+// Imprima todos os números de 1 a 100 que são pares e múltiplos de 3.
+
+function numerosParesMultiplos3(){
+
+    for(let i=1; i <=100; i++){
+        if(i % 2 == 0 && i % 3 == 0){
+            console.log(i)
+        }
+    }
+}
