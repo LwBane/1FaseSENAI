@@ -24,3 +24,14 @@ function numerosParesMultiplos3(){
         }
     }
 }
+
+//Imprima os números de 1 a 50 que são ímpares ou múltiplos de 7.
+
+function numerosImparesMultiplos7(){
+
+    for(let i=1; i <=50; i++){
+        if(i % 2 != 0 || i % 7 == 0){
+            console.log(i)
+        }
+    }
+}
