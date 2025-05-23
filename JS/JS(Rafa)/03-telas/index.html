@@ -8,22 +8,52 @@
 </head>
 <body>
 
-    <nav>
-        <button onclick="mostrarLogin()">Login</button>
-        <button onclick="mostrarCadastro()">Cadastro</button>
-    </nav>
+        <nav>
+            <button onclick="mostrarLogin()">Login</button>
+            <button onclick="mostrarCadastro()">Cadastro</button>
+        </nav>
 
     <h1>Telinha</h1>
     <div id = "login">
         <h2>Login</h2>
+        <div class="containerInput">
+            <label for="">Nome</label>
+            <input type = "text">
+        </div>
 
-    </div>
-
+        <div class="containerInput">
+            <label for="">Senha</label>
+            <input type = "password">
+        </div>
+    
+        <button>Logar</button>
+        </div>
     <div id="cadastro">
         <h2>Cadastro</h2>
-    
+        <div class="containerInput">
+            <label for="">Nome</label>
+            <input type = "text">
+        </div>
+
+        <div class="containerInput">
+            <label for="">Email</label>
+            <input type = "email">
+        </div>
+
+        <div class="containerInput">
+            <label for="">Senha</label>
+            <input type = "password">
+        </div>
+        
+        <div class="containerInput">
+            <label for="">Confirmar Senha</label>
+            <input type = "password">
+        </div>
+
+        <button>Cadastrar</button>
     </div>
-    
+
+        
     <script src="script.js"></script>
 </body>
 </html>
