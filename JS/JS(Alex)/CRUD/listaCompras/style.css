@@ -1,0 +1,11 @@
+.container_principal{
+    display: flex;
+    width: 100%;
+}
+
+.titulo{
+    display: flex;
+    gap: 10px; 
+    width: 100%;
+    justify-content: center;
+}
