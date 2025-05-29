@@ -1,5 +1,13 @@
 *{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    /* box-sizing: border-box; -> é para que o padding e a borda não aumentem o tamanho do elemento */
+    /* margin: 0; -> é para tirar a margem padrão do navegador */
+    /* padding: 0; -> é para tirar o padding padrão do navegador */ 
+    
+    /* É bom smp fazer isso no começo do CSS, para que todos os elementos tenham o mesmo estilo base */ 
 }
 
 body{
@@ -9,6 +17,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 20px;
 }
 
 /* h1{
@@ -20,16 +29,17 @@ body{
 
     nav{
         width: 100%;
+        padding: 5px;
     }
 
 
 
 #login{
-    display: flex;
+    display: flex;                              /*cria um fluxo de elementos dentro da minha página*/
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     border: 2px solid #7dabfa;
     border-radius: 10px;
     background-color: #c9e3f9;
@@ -37,7 +47,7 @@ body{
     color: #091036;
     margin: 0 0 10px 0;    
     width: 350px;
-    height: 250px;
+    min-height: 250px;                      /*min-height é para que o elemento tenha uma altura mínima, mas possa crescer se necessário */
     box-shadow: 0px 0px 10px #335c92;
 }
 
@@ -46,27 +56,30 @@ body{
 #cadastro{
     display: none;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     border: 2px solid #7dabfa;
     border-radius: 10px;
     background-color: #c9e3f9;
     padding: 10px;
-    text-align: center;
+    /* text-align: center; -> vai deixar os textin no meio (n queremos isso agr)*/ 
     color: #091036;
     margin: 0 0 10px 0;
-    width: 500px;
-    height: 400px;
+    width: 400px;
+    height: 300px;
     box-shadow: 0px 0px 10px #335c92;
 }
 
-/* paddin é p não grudar */
+#produtos{
+    display: none;
+}
 
+
+/* paddin é p não grudar */
 /* justify-content é para alinhar no meio */
 /* flex-start é para alinhar no começo */
 /* flex-end é para alinhar no final */
-
 /*align-items é para alinhar no meio */
 
 .containerInput{
@@ -79,6 +92,8 @@ body{
 input{
     border-radius: 5px;
     height: 20px;
+    outline: 0; /*tira o contorno do elemento quando ele é selecionado */
+    border: 1px solid black /*borda do input*/
 }
 
 button{
