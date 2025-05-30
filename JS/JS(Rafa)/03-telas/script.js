@@ -1,5 +1,10 @@
 // let nome, email, senha 
 
+//  document.getElementById('inpLogNome').focus(); // Foca no campo de nome do login
+
+
+inicializar()
+
 let usuario = {
     nome: "", 
     email: "", 
@@ -38,7 +43,7 @@ function logar(){
 function mostrarLogin(){
     esconderTodas()
     document.getElementById('login').style.display = 'flex';
-    document.getElementById('inpLogNome').focus(); // Foca no campo de nome do login
+    document.getElementById('inpLogNome').focus()
 }
 
 function mostrarCadastro(){
@@ -68,5 +73,10 @@ function esconderInputs(){
     document.getElementById('inpLogSenha').value = ''
 }
 
+function inicializar(){
 
+    mostrarLogin()
+    alert('Seja bem vindo!')
+
+}
  
