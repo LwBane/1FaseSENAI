@@ -17,7 +17,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    /* gap: 50px; */
 }
 
 /* h1{
@@ -27,10 +27,12 @@ body{
     width: 100%;
 } */
 
-    nav{
-        width: 100%;
-        padding: 5px;
-    }
+nav{
+    display: none;
+    width: 100%;
+    padding: 5px;
+    /* position: fixed; */
+}
 
 
 
@@ -45,7 +47,7 @@ body{
     background-color: #c9e3f9;
     padding: 10px; 
     color: #091036;
-    margin: 0 0 10px 0;    
+    margin: 20px 0 20px 0;   
     width: 350px;
     min-height: 250px;                      /*min-height é para que o elemento tenha uma altura mínima, mas possa crescer se necessário */
     box-shadow: 0px 0px 10px #335c92;
@@ -65,7 +67,7 @@ body{
     padding: 10px;
     /* text-align: center; -> vai deixar os textin no meio (n queremos isso agr)*/ 
     color: #091036;
-    margin: 0 0 10px 0;
+    /* margin: 0 0 10px 0; */
     width: 400px;
     height: 300px;
     box-shadow: 0px 0px 10px #335c92;
@@ -107,11 +109,29 @@ button{
 
 button:hover{
     background-color: #7dabfa;
-   color: #091036;
+    color: #091036;
     transition: 0.3s;
     cursor: pointer;
     scale: 1.1;
 }
 
+.bt-secundario{
+    background: none;
+    color: #29486b;
+}
+
+button.bt-secundario:hover{
+    background: none;
+}
+
 /*hoover é quando o mouse passa por cima do botão*/
 /*scale é para aumentar o botão quando o mouse passa por cima*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw; 
+    min-height: 100vh;
+}

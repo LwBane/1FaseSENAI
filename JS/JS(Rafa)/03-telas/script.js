@@ -55,6 +55,7 @@ function mostrarCadastro(){
 function mostrarProdutos(){
     esconderTodas()
     document.getElementById('produtos').style.display = 'flex';
+    document.getElementById('navbar').style.display = 'flex';
 }
 
 function esconderTodas(){
@@ -76,7 +77,7 @@ function esconderInputs(){
 function inicializar(){
 
     mostrarLogin()
-    alert('Seja bem vindo!')
+    // alert('Seja bem vindo!')
 
 }
  

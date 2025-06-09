@@ -8,14 +8,17 @@
 </head>
 <body>
 
-        <nav>
+      <nav id="navbar">
             <button onclick="mostrarLogin()">Login</button>
             <button onclick="mostrarCadastro()">Cadastro</button>
             <button onclick="mostrarProdutos()">Produtos</button>
         </nav>
 
-    <h1>Login/Cadastro</h1>
-    <section id = "login">
+    <!-- <h1>Login/Cadastro/Produtos</h1> -->
+
+    <main>
+
+       <section id = "login">
         <h2>Login</h2>
         <div class="containerInput">
             <label for="">Nome</label>
@@ -28,10 +31,11 @@
         </div>
     
         <button onclick="logar()">Logar</button>
+        <button onclick ="mostrarCadastro()" class="bt-secundario">Não tem cadastro?</button>
 
-    </section>
+        </section>
 
-    <section id="cadastro">
+        <section id="cadastro">
         <h2>Cadastro</h2>
         <div class="containerInput">
             <label for="">Nome</label>
@@ -48,16 +52,21 @@
             <label for="">Senha</label>
             <input type = "password" id="inpCadSenha">
         </div>
-        
 
         <button onclick="cadastrar()">Cadastrar</button>
-    </section>
+        <button onclick="mostrarLogin()" class="bt-secundario">Já tem cadastro?</button>
+        
+        </section>
 
-    <section id="produtos">
+        <section id="produtos">
         <h2>Produtos</h2>
 
 
-    </section>
+        </section> 
+
+    </main>
+
+ 
 
         
     <script src="script.js"></script>
