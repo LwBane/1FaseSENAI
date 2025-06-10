@@ -1,4 +1,4 @@
-let nomes = ['João', 'Maria']
+let nomes = ['João', 'Clara', 'Jonas', 'Carla', 'Maria', 'Alessandro']
 
 // console.log(nomes[1])
 // console.log(nomes.length) // pra saber o tamanho do array
@@ -14,3 +14,15 @@ let nomes = ['João', 'Maria']
 
 // nomes.unshift('Ana') --> pra adicionar um elemento no início do array
 // nomes.shift() --> pra remover o primeiro elemento do array
+
+//nomes.forEach((nome, index) => {
+    // console.log(element + 'globalemail.com')
+    // }
+
+// nomesComSobrenome = nomes.map((nome, index) => {
+//     return nome + 'Silva'
+// })
+
+//let nomesFiltrados = nomes.filter((nome) => nome.length > 5)
+// let findNome = nomes.find((nome) => nome.length > 5)
+// console.log(findNome) 
