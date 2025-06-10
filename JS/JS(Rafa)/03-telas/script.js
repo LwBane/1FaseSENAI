@@ -29,24 +29,28 @@ function cadastrar(){
     console.log(usuarios) // Exibe os dados do usuário no console
 }
 
-
-//  for(let i=0; i<usuarios.lenght; i++){
-//  alert(usuarios[i].nome)
-//  }
-
 function logar(){
 
     let nome = document.getElementById('inpLogNome').value
     let senha = document.getElementById('inpLogSenha').value
 
-    if(nome === usuario.nome && senha === usuario.senha){
-        alert('Login realizado com sucesso!')
-        esconderInputs()
-        mostrarProdutos()
-        // document.getElementById('navbar').style.display = 'block';
-    }else{
-        alert('Usuário ou senha inválidos!')
+    for(let i=0; i<usuarios.length; i++){
+        
+        if((nome === usuarios[i].nome || nome === usuarios[i].email) && senha === usuarios[i].senha){
+            alert('Login realizado com sucesso! Olá ' + usuarios[i].nome)
+            esconderInputs()
+            mostrarProdutos()
+            // document.getElementById('navbar').style.display = 'block';
+            
+        }
+        
+        // else{
+        //     alert('Usuário ou senha inválidos!')
+        // }
+
     }
+
+
 
 }
 
