@@ -5,24 +5,34 @@
 
 inicializar()
 
-let usuario = {
-    nome: "", 
-    email: "", 
-    senha: "" 
-}
+let usuarios = []
 
-    // Objeto para armazenar os dados do usuário - é oq ta dentro do par de chaves -
-    
+// let nomesTeste = ["Usuario 1", "Usuario 2"]
+// Objeto para armazenar os dados do usuário - é oq ta dentro do par de chaves -
+
 function cadastrar(){
-    usuario.nome = document.getElementById('inpCadNome').value  
-    usuario.email = document.getElementById('inpCadEmail').value
-    usuario.senha = document.getElementById('inpCadSenha').value
-    alert('Cadastro realizado com sucesso!')
 
-    console.log(usuario); // Exibe os dados do usuário no console
+    let usuario = {
+
+        nome: document.getElementById('inpCadNome').value,
+        email: document.getElementById('inpCadEmail').value,
+        senha: document.getElementById('inpCadSenha').value
+        
+    }
+    
+    usuarios.push(usuario) // Adiciona o usuário ao array usuarios
     esconderInputs()
     mostrarLogin()
+    
+    alert('Cadastro realizado com sucesso!')
+
+    console.log(usuarios) // Exibe os dados do usuário no console
 }
+
+
+//  for(let i=0; i<usuarios.lenght; i++){
+//  alert(usuarios[i].nome)
+//  }
 
 function logar(){
 
@@ -33,6 +43,7 @@ function logar(){
         alert('Login realizado com sucesso!')
         esconderInputs()
         mostrarProdutos()
+        // document.getElementById('navbar').style.display = 'block';
     }else{
         alert('Usuário ou senha inválidos!')
     }
