@@ -25,7 +25,7 @@ let numeros2 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 
    let numerosInvertidos = numeros2.map((elemento, index,) => {
    let tamanhoArray = numeros2.length - 1
-   return numeros2[tamanhoArray - index] 
+   return numeros2[tamanhoArray - index] //"n precisa colocar" se em cima colocar ((elemento, index) => elemento)
 })
 
 console.log(numeros2)
