@@ -82,3 +82,48 @@ console.log(frutas2.indexOf("Kiwi"))
 let mistos = ["Abacaxi", "Laranja", 34, 322]
 let strings = mistos.filter(valor => typeof valor === "string")
 console.log(strings)
+
+//27. Coloque a primeira letra de cada palavra em maiúscula 
+
+let palavras2 = ['teste', 'seila', 'qualquer', 'coisa']
+let palavrasMaiusculo = palavras2.map((palavra)=> {
+    let [primeira, ...restante] = palavra
+    let novaletra = palavra[0].toUpperCase()
+    return novaletra + restante.join('')
+})
+console.log(palavrasMaiusculo)
+
+//28. Verifique se todos os elementos são números com .every(). 
+
+let elementos = [3,4,5,6,7,8]
+let saoNumeros = elementos.every(elemento => typeof elemento === "number") // o .every verifica se todos os elementos atendem a condição 
+console.log(saoNumeros)
+
+//29. Verifique se ao menos um número é maior que 100 usando .some() 
+
+let elementos2 = [3,4,5,6,7,8,202]
+let testeMaior = elementos2.some(elemento => elemento > 100) // verifica se um elemento corresponde a condição 
+console.log(testeMaior)
+
+//30. "Achatamento": transforme um array com subarrays em um único array plano (um nível só)
+
+let arraydearray = [34, 434, [342, 3, 656, 4], [2, [45,34, [344,343]]]]
+let arrays = arraydearray.flat(3)
+console.log(arrays)
+
+//32.  Crie uma função que recebe um array de números e retorna a média 
+
+let notas =[5,6,7,8]
+function calcularMedia(array){
+    let soma = array.reduce((acumulador, atual)=> acumulador += atual ,0)
+    return soma/array.length
+}
+console.log(calcularMedia(notas))
+
+// 34. Rotacione os elementos de um array uma posição para a direita 
+
+function rotacionar(array){
+    array.unshift(array.pop());  // o pop remove a última posição e retorna oq q era (o valor removido); unshift adiciona no começo do array o valor 
+    return array; 
+}
+console.log(rotacionar(notas))
