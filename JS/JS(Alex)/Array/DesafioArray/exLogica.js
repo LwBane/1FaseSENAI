@@ -9,7 +9,3 @@ const produtos = [
  { nome: "Meias", preco: 9.9, categoria: "Roupas" },
  { nome: "Teclado", preco: 120, categoria: "Eletrônicos" }
 ] 
-
-// 📌 Desafio 1: Filtrar Números Maiores que 10
-
-
