@@ -57,8 +57,10 @@ const produtosLoja = [
 ];
 
 function desconto(produtosLoja) {
-
+    return produtosLoja.filter(produtos => produtos.preco > 100)
 }
+
+console.log(desconto(produtosLoja));
 
 
 // 5. Verificações de dados (Capacidades: 1, 2, 3, 4, 5, 7, 8, 9, 10)
@@ -94,3 +96,13 @@ console.log(buscarProduto("teclado")); // retorna undefined (n tem teclado no ar
 
 // 7. Listar tarefas pendentes (Capacidades: 1, 2, 3, 4, 5, 7, 8, 9, 10)  --> Retornar uma lista nova 
 // Filtre as tarefas não concluídas e liste com prefixo "Pendente: ...":
+
+const tarefas = [
+    { descricao: "Estudar JS", concluida: true},
+    { descricao: "Fazer prova", concluida: false},
+    { descricao: "Enviar projeto", concluida: false}
+]; 
+
+const naoConcluidas = tarefas.filter(tarefa => tarefa.concluida === false).map(tarefa => tarefa.soup("Pendente"))
+
+console.log(naoConcluidas)
