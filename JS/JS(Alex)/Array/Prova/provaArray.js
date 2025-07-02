@@ -92,7 +92,7 @@ function buscarProduto(nome) {
 
 console.log(buscarProduto("notebook"));
 console.log(buscarProduto("mouse"));
-console.log(buscarProduto("teclado")); // retorna undefined (n tem teclado no array)
+console.log(buscarProduto("teclado")); // retorna undefined pq n tem teclado no array
 
 // 7. Listar tarefas pendentes (Capacidades: 1, 2, 3, 4, 5, 7, 8, 9, 10)  --> Retornar uma lista nova 
 // Filtre as tarefas não concluídas e liste com prefixo "Pendente: ...":
@@ -103,6 +103,5 @@ const tarefas = [
     { descricao: "Enviar projeto", concluida: false}
 ]; 
 
-const naoConcluidas = tarefas.filter(tarefa => tarefa.concluida === false).map(tarefa => tarefa.soup("Pendente"))
-
+const naoConcluidas = tarefas.filter(tarefa => tarefa.concluida === false)
 console.log(naoConcluidas)
