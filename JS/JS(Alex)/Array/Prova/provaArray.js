@@ -92,19 +92,17 @@ function buscarProduto(nome) {
 
 console.log(buscarProduto("notebook"));
 console.log(buscarProduto("mouse"));
-console.log(buscarProduto("teclado")); // retorna undefined pq n tem teclado no array
+console.log("TESTE (NÃO DEU ERRADO): " + buscarProduto("teclado")); // retorna undefined pq n tem teclado no array
 
 // 7. Listar tarefas pendentes (Capacidades: 1, 2, 3, 4, 5, 7, 8, 9, 10)  --> Retornar uma lista nova 
 // Filtre as tarefas não concluídas e liste com prefixo "Pendente: ...":
 
 const tarefas = [
-    { descricao: "Estudar JS", concluida: true},
-    { descricao: "Fazer prova", concluida: false},
-    { descricao: "Enviar projeto", concluida: false}
+    { descricao: "Estudar JS", concluida: true },
+    { descricao: "Fazer prova", concluida: false },
+    { descricao: "Enviar projeto", concluida: false }
 ]; 
 
-const pendentes = tarefas.filter(tarefa => tarefa.concluida === false).map(tarefa =>`Pendente: ${tarefa.descricao}`);
+const pendentes = tarefas.filter(tarefa => tarefa.concluida === false).map(tarefa => ({ pendente: tarefa.descricao }))
+console.log(pendentes) //espero que seja assim xD
 
-console.log(pendentes)
-
-// arruma pra eu deixar em um négocio só, tipo pendentes: fazer prova; enviar projeto
