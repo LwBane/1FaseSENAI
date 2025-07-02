@@ -103,5 +103,8 @@ const tarefas = [
     { descricao: "Enviar projeto", concluida: false}
 ]; 
 
-const naoConcluidas = tarefas.filter(tarefa => tarefa.concluida === false)
-console.log(naoConcluidas)
+const pendentes = tarefas.filter(tarefa => tarefa.concluida === false).map(tarefa =>`Pendente: ${tarefa.descricao}`);
+
+console.log(pendentes)
+
+// arruma pra eu deixar em um négocio só, tipo pendentes: fazer prova; enviar projeto
