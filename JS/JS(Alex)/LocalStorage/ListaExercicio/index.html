@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Exercícios LocalStorage</title>
+</head>
+<body>
+  <!-- Ex 1 -->
+  <div class="bloco">
+    <h2>1. Contador Persistente</h2>
+    <p>Valor atual: <span id="contador">0</span></p>
+    <button onclick="alterarContador(1)">+</button>
+    <button onclick="alterarContador(-1)">−</button>
+  </div>
+
+  <!-- Ex 2 -->
+  <div class="bloco">
+    <h2>2. Texto Salvo</h2>
+    <textarea id="meuTexto" placeholder="Digite algo"></textarea>
+  </div>
+
+  <!-- Ex 3 -->
+  <div class="bloco">
+    <h2>3. Lista de Tarefas</h2>
+    <ul id="listaTarefas">
+      <li><input type="checkbox" data-id="0" /> Fazer lista de exercício - "Lógica de programação"</li>
+      <li><input type="checkbox" data-id="1" /> Entrega SA - EletroEletrônica</li>
+      <li><input type="checkbox" data-id="2" /> Prova</li>
+    </ul>
+  </div>
+
+  <!-- Ex 4 -->
+  <div class="bloco">
+    <h2>4. Nome do Usuário</h2>
+    <p id="cumprimento"></p>
+  </div>
+
+  <!-- Ex 5 -->
+  <div class="bloco">
+    <h2>5. Escolha de Cor</h2>
+    <div id="ex5-buttons">
+      <button onclick="mudarCor('#a9d2f6')">Azul 1</button>
+      <button onclick="mudarCor('#6392bb')">Azul 2</button>
+      <button onclick="mudarCor('#233e56')">Azul 3</button>
+      <button onclick="mudarCor('#73c6a9')">Cor Original</button>
+    </div>
+  </div>
+
+  <!-- Ex 6 -->
+  <div class="bloco">
+    <h2>6. Modo Noturno</h2>
+    <button onclick="alternarModo()">Alternar Modo Escuro</button>
+  </div>
+
+  <!-- Ex 7 -->
+  <div class="bloco">
+    <h2>7. Visita Diária</h2>
+    <p id="mensagemVisita"></p>
+  </div>
+
+  <!-- Ex 8 -->
+  <div class="bloco">
+    <h2>8. Última Visita</h2>
+    <p id="ultimaVisita"></p>
+  </div>
+
+  <!-- Ex 9 -->
+  <div class="bloco">
+    <h2>9. Mensagem de Boas-vindas Personalizada</h2>
+    <input type="text" id="inputMensagem" placeholder="Digite a mensagem" />
+    <button onclick="salvarMensagem()">Salvar Mensagem</button>
+    <h3 id="mensagemTopo"></h3>
+  </div>
+
+  <!-- Ex 10 -->
+  <div class="bloco">
+    <h2>10. Número Secreto</h2>
+    <p>Adivinhe o número (dica: está entre 1 e 10)</p>
+    <input type="number" id="palpite" min="1" max="10" placeholder="Digite um número" />
+    <button onclick="verificarPalpite()">Tentar</button>
+    <p id="resultadoPalpite"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

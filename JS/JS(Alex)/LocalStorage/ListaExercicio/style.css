@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #73c6a9;
+}
+
+.bloco {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+
+.bloco button {
+    padding: 8px 15px;
+    margin: 5px 0;
+    font-size: 16px;
+    cursor: pointer;
+    min-width: 100px;  
+    border: none;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Inputs dos Exercícios 9 e 10 (tava mt estranho antes) */
+input[type="text"],
+input[type="number"] {
+    width: 250px;       
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-right: 10px; 
+}
+
+/* MODO ESCURO (pro exercício 6) */ /*Sempre quis fazer isso xD*/
+
+.dark {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark .bloco {
+    background-color: #333;
+}
+
+.dark button {
+    background-color: #444;
+    color: #fff;
+    border: none; /* Como já tem diferença de cor dos botões e do fundo melhor tirar essa borda*/ /*no modo claro n muda tanto mas tirei lá tb*/
+}
+
+.dark textarea,
+.dark input {
+    background-color: #555;
+    color: #fff;
+    border: 1px solid #888;
+}
